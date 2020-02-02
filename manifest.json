@@ -1,0 +1,16 @@
+{
+    "name": "History Tracker",
+    "version": "1.0",
+    "description": "Get to know your browsing habits!",
+    "permissions": ["activeTab", "declarativeContent", "storage", "history","<all_urls>"],
+    "background":
+    {
+      "scripts": ["background.js"]
+    },
+    "browser_action":
+    {
+      "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js; object-src 'self'",
+    "manifest_version": 2
+}

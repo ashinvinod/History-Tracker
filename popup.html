@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+      <title>History Popup</title>
+    </head>
+    <body>
+        <div id ="rectangle">&nbsp;History Tracker <i>v1.0</i> </div>
+        <font size="3">&nbsp;Top 6 most visited websites - </font>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
+        <canvas id="myChart" width="350" height="300" ></canvas>
+
+        <script src="popup.js"></script>
+
+        <style type="text/css">
+            #rectangle{
+                font-size: 25px;
+                font-weight: bold;
+                color: #e0e0e0;
+                width: 350px;
+                height: 40px;
+                background: #37474F;
+            }
+            body {
+                margin:0px !important;
+                background-color: #f8f8ff;
+            }
+            .submit {
+                 background-color: #bbb;
+                 padding: .5em;
+                 border-radius: 3px;
+                 color: #fff;
+                 font-size: 15px;
+                 text-decoration: none;
+                 border: none;
+                 margin-bottom: 5px;
+                 margin-left: 3px;
+            }
+            .submit:hover {
+                 border: none;
+                 background: gray;
+                 box-shadow: 0px 0px 1px #777;
+            }
+
+            #button24H {
+                 margin-left: 7px;
+            }
+        </style>
+       <div class = "container">
+       <button id = "button24H", class = "submit", type = "button">24 hours</button>
+       <button id = "button7D", class = "submit", type = "button">7 days</button>
+       <button id = "button12M", class = "submit", type = "button">12 months</button>
+       </div>
+
+        <script src="change.js"></script>
+    </body>
+</html>
